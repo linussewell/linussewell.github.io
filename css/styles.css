@@ -598,6 +598,7 @@ body, html {
     /* max-height: 100%; */
     align-items: right;
     justify-items: right;
+    overflow: hidden;
 }
 
 .homeButton {
