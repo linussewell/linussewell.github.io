@@ -541,34 +541,58 @@ body, html {
 }
 
 .grid_container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 
+    "content_1"   "grid_image"
+    "content_2";
+
+    grid-template-columns: repeat(auto-fit);
+    grid-template-rows: repeat(auto-fit);
+
     align-items: center;
+    justify-items: center;
 }
 
-
-.grid_container .content {
-    grid-area: "content";
+.grid_container .content_1 {
+    grid-area: "content_1";
     margin-left: 5em; 
     margin-right: 5em;
     padding: 5em;
     text-align: left;
     width: 35em;
-    align-items: right;
+    align-items: left;
 }
 
-.grid_container .content h1 {
+.grid_container .content_1 h1 {
     color: var(--heading-text-colour);
 }
 
-.grid_container .content h3 {
+.grid_container .content_1 h3 {
+    color: var(--primary-text-colour)
+}
+
+.grid_container .content_2 {
+    grid-area: "content_2";
+    margin-left: 5em; 
+    margin-right: 5em;
+    padding: 5em;
+    text-align: left;
+    width: 35em;
+    height: auto;
+    align-items: right;
+}
+
+.grid_container .content_2 h1 {
+    color: var(--heading-text-colour);
+}
+
+.grid_container .content_2 h3 {
     color: var(--primary-text-colour)
 }
 
 .grid_container .grid_image {
-    grid-area: "image";
-    padding: 5vw;
-    flex-shrink: 2;
+    grid-area: "grid_image";
+    grid-row: span 2 / auto;
 }
 
 .homeButton {
