@@ -1,34 +1,32 @@
+/* ADD ANY COLOURS, SIZES ETC. HERE */
+:root {
+    --primary-colour: "";
+    --secondary-colour: "";
+    
+    /* Add any fonts here */
+    --primary-font: "";
+
+    /* Easy background and element colours */
+    --background-colour: #efeae7;
+    --heading-text-colour: #27233a;
+    --primary-text-colour: #505168;
+}
+
 body, html {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', sans-serif;
+    background-color: var(--background-colour);
 }
 
-#home {
-    background-image: url('./image/profile.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    text-align: left;
-    float: right;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: 0%;
-    width: 100%;
-    float: right;
-    text-align: left;
-}
 
 #header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100vw;
-    background: #505168;
+    background-color: #505168;
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     padding: 30px;
@@ -36,19 +34,19 @@ img {
     z-index: 999;
 }
 
-#header .container {
+#header .header_container {
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
 
-#header .info {
+#header .header_info {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-#header.appDetail .info > a {
+#header.appDetail .header_info > a {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -57,7 +55,7 @@ img {
     gap: 15px;
 }
 
-#header.appDetail .info > a:hover {
+#header.appDetail .header_info > a:hover {
     color: #B3C0A4;
 }
 
@@ -80,7 +78,7 @@ img {
     color: #EAEFD3;
 }
 
-#header.appDetail .info img {
+#header.appDetail .header_info img {
     display: block;
     margin: 0;
     height: 60px;
@@ -94,7 +92,7 @@ img {
     font-size: 24px;
 }
 
-#header.appDetail .container {
+#header.appDetail .header_container {
     align-items: center;
 }
 
@@ -109,7 +107,7 @@ img {
     height: 44px;
 }
 
-#header .socials {
+#header .header_socials {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -125,7 +123,7 @@ img {
     transition: all 125ms ease-in-out;
 }
 
-#header .socials .about a {
+#header .header_socials .about a {
     font-size: 18px;
     display: flex;
     flex-direction: row;
@@ -133,7 +131,7 @@ img {
     opacity: 0.9;
 }
 
-#header .socials .about a::after {
+#header .header_socials .about a::after {
     display: flex;
     flex-direction: row;
     content: " ";
@@ -156,7 +154,7 @@ img {
     padding: 50px;
 }
 
-.container {
+.header_container {
     max-width: 1040px;
     display: block;
     width: 100%;
@@ -563,4 +561,49 @@ img {
     .featuredApps {
         gap: 30px;
     }
+}
+
+/* kacper code */
+
+.grid_container {
+    margin: 10em;
+    display: grid;
+    
+    grid-template-areas: 
+    "content" "image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh;
+    gap: 1em;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 100vh;
+    max-height: 50vh;
+
+
+}
+
+.grid_container .content {
+    grid-area: "content";
+    margin-left: 45em; /* tweak this */
+    margin-right: 5em;
+    padding: 5em;
+    text-align: left;
+    width: 30em;
+}
+
+.grid_container .content h1 {
+    color: var(--heading-text-colour);
+}
+
+.grid_container .content h3 {
+    color: var(--primary-text-colour)
+}
+
+
+.grid_container .grid_image {
+    grid-area: "image";
+    padding: 5em;
 }
