@@ -593,6 +593,7 @@ body, html {
 .grid_container .grid_image {
     grid-area: "grid_image";
     grid-row: span 2 / auto;
+    overflow: hidden;
 }
 
 .homeButton {
