@@ -571,12 +571,18 @@ body, html {
     padding: 5vw;
     flex-shrink: 2;
 }
-
+/*
 @media (max-width: 750) {
     .mobile-hidden {
         display: none;
     }
     .header_container {
         font-size: 0.625rem;
+    }
+}
+*/
+@media (max-width: 700px) {
+    .mobile-hidden {
+        display: none;
     }
 }
