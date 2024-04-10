@@ -1,1 +1,1 @@
-www.linussewell.com
+linussewell.com
