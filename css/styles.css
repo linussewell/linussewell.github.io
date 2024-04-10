@@ -514,7 +514,7 @@ body, html {
 }
 
 #footer.about-hero {
-    background: radial-gradient(ellipse at bottom, rgba(122, 196, 245, 0.2), rgba(52, 152, 219, 0.2));;
+    background: var(--background-colour);
 }
 
 .about-me > .about-me {
@@ -527,6 +527,7 @@ body, html {
 #footer.about-hero h1 {
     display: block;
     padding-top: 15px;
+    color: var(--heading-text-colour);
 }
 
 #footer.about-hero .about-me > p {
@@ -536,7 +537,7 @@ body, html {
 
     font-size: 17px;
     line-height: 1.6em;
-    color: #333333d5;
+    color: var(--primary-text-colour);
 }
 
 .grid_container {
@@ -567,11 +568,11 @@ body, html {
 
 .grid_container .grid_image {
     grid-area: "image";
-    padding: 5em;
+    padding: 5vw;
     flex-shrink: 2;
 }
 
-@media (max-width: 700) {
+@media (max-width: 750) {
     .mobile-hidden {
         display: none;
     }
