@@ -531,7 +531,7 @@ body, html {
 }
 
 #footer.about-hero .about-me > p {
-    display: block;
+    display:inline-block;
     margin: 0;
     text-align: left;
 
