@@ -566,33 +566,24 @@ body, html {
 /* kacper code */
 
 .grid_container {
-    margin: 10em;
-    display: grid;
-    
-    grid-template-areas: 
-    "content" "image";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
-    gap: 1em;
+    display: flex;
 
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    max-width: 100vh;
-    max-height: 50vh;
-
 
 }
+
 
 .grid_container .content {
     grid-area: "content";
-    margin-left: 45em; /* tweak this */
+    margin-left: 5em; 
     margin-right: 5em;
     padding: 5em;
     text-align: left;
-    width: 30em;
+    width: 35em;
+    align-items: right;
 }
+
 
 .grid_container .content h1 {
     color: var(--heading-text-colour);
@@ -601,7 +592,6 @@ body, html {
 .grid_container .content h3 {
     color: var(--primary-text-colour)
 }
-
 
 .grid_container .grid_image {
     grid-area: "image";
