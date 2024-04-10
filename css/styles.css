@@ -557,7 +557,6 @@ body, html {
     align-items: right;
 }
 
-
 .grid_container .content h1 {
     color: var(--heading-text-colour);
 }
@@ -570,6 +569,21 @@ body, html {
     grid-area: "image";
     padding: 5vw;
     flex-shrink: 2;
+}
+
+.homeButton {
+    border-radius: 5px;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #EAEFD3;
+    font-size: 18px;
+    background: #505168;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+}
+
+.homeButton:hover {
+    background: #27233A;
+    text-decoration: none;
 }
 
 @media (max-width: 700px) {
