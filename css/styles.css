@@ -534,7 +534,6 @@ body, html {
     display:inline-block;
     margin: 0;
     text-align: left;
-    width: auto;
 
     font-size: 17px;
     line-height: 1.6em;
@@ -585,5 +584,8 @@ body, html {
 @media (max-width: 700px) {
     .mobile-hidden {
         display: none;
+    }
+    #footer.about-hero .about-me > p {
+        text-align: center;
     }
 }
