@@ -539,38 +539,10 @@ body, html {
     color: #333333d5;
 }
 
-@media (max-width: 1039px) {
-    .appPreview {
-        padding: 50px 15px;
-    }
-
-    .appPreview .showcase {
-        width: 100%;
-    }
-}
-
-@media (max-width: 700px) {
-    .mobile-hidden {
-        display: none;
-    }
-
-    .horizontal2ColumnMobileOne {
-        flex-direction: column;
-    }
-
-    .featuredApps {
-        gap: 30px;
-    }
-}
-
-/* kacper code */
-
 .grid_container {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
-
 }
 
 
@@ -596,4 +568,14 @@ body, html {
 .grid_container .grid_image {
     grid-area: "image";
     padding: 5em;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700) {
+    .mobile-hidden {
+        display: none;
+    }
+    .header_container {
+        font-size: 0.625rem;
+    }
 }
