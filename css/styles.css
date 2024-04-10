@@ -568,7 +568,7 @@ body, html {
 .grid_container .grid_image {
     grid-area: "image";
     padding: 5em;
-    flex-shrink: 0;
+    flex-shrink: 2;
 }
 
 @media (max-width: 700) {
