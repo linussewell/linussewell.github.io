@@ -683,6 +683,9 @@ body, html {
 }
 
 @media (max-width: 672px) {
+    .header_socials .about a {
+        font-size: 14px;
+    }
     .grid_container .content_1 {
         max-width: 512px;
     }
