@@ -596,6 +596,7 @@ body, html {
     align-items: center;
     justify-items: center;
     padding: 5em;
+    max-width: fit-content;
 }
 
 .homeButton {
@@ -637,6 +638,7 @@ body, html {
         padding: auto;
         text-align: left;
         width: auto;
+        max-width: fit-content;
         align-items: center;
         justify-items: center;
     }
@@ -656,6 +658,7 @@ body, html {
         padding: auto;
         text-align: left;
         width: auto;
+        max-width: fit-content;
         height: auto;
         align-items: center;
         justify-items: center;
@@ -680,7 +683,13 @@ body, html {
 }
 
 @media (max-width: 672px) {
-    .grid_container .grid_image {
+    .grid_container .content_1 {
         max-width: 512px;
+    }
+    .grid_container .content_2 {
+        max-width: 512px;
+    }
+    .grid_container .grid_image {
+        max-width: 480px;
     }  
 }
