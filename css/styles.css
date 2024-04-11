@@ -618,3 +618,66 @@ body, html {
         display: none;
     }
 }
+
+
+/* use that grid generator to create mobile format and input changes below*/
+
+@media (max-width: 900px) {
+    .grid_container {
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+        align-items: auto;
+        justify-items: auto;
+    }
+    
+    .grid_container .content_1 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 1em; 
+        margin-right: 1em;
+        padding: 5em;
+        text-align: left;
+        width: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .grid_container .content_1 h1 {
+        color: var(--heading-text-colour);
+    }
+    
+    .grid_container .content_1 h3 {
+        color: var(--primary-text-colour)
+    }
+    
+    .grid_container .content_2 {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-left: 1em; 
+        margin-right: 1em;
+        padding: 5em;
+        text-align: left;
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .grid_container .content_2 h1 {
+        color: var(--heading-text-colour);
+    }
+    
+    .grid_container .content_2 h3 {
+        color: var(--primary-text-colour)
+    }
+    
+    .grid_container .grid_image {
+        grid-area: 1 / 2 / 3 / 3;
+        width: auto;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+        padding: 5em;
+    }
+}
