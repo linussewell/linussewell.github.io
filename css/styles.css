@@ -174,10 +174,6 @@ body, html {
     opacity: 0.8;
 }
 
-.appPreview.memorize h1 {
-    margin-bottom: -5px;
-}
-
 .appPreview a {
     text-decoration: none;
     color: rgba(51, 51, 51, 0.7);
@@ -211,10 +207,6 @@ body, html {
     width: 80%;
     margin: 0;
     padding: 40px 0;
-}
-
-.appPreview .youtubeShowcase {
-    max-width: 70%;
 }
 
 .appPreview .links {
@@ -263,26 +255,6 @@ body, html {
     box-shadow: #00000000 0px 0px 0px;
 }
 
-.coffeeNoteBG {
-    border: 2px solid #642D1F;
-    background: linear-gradient(0.33turn, #642D1F, #642d1fdb);
-}
-.memorizeBG {
-    border: 2px solid #3498db;
-    background: linear-gradient(0.33turn, #3498db, #7ac4f5);
-}
-.bookieBG {
-    border: 2px solid #F49228;
-    background: linear-gradient(0.33turn, #F49228, #FDB610);
-}
-.reflectBG {
-    border: 2px solid #3E845C;
-    background: linear-gradient(0.33turn, #3E845C, #3E865C);
-}
-.youtubeBG {
-    border: 2px solid #FF0000;
-    background: linear-gradient(0.33turn, #FF0000, #f33131);
-}
 .neutralBG {
     border: 2px solid #ecebec;
     background: linear-gradient(0.33turn, #e3e3e3, #ededed);
@@ -297,40 +269,6 @@ body, html {
 }
 .sfpro {
     font-family: -apple-system, 'SF Pro', 'Roboto', sans-serif;
-}
-
-.flex-centered {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.memorize {
-    background: #d9ecf9;
-    /* background: linear-gradient(0.33turn, #3498db70, #7ac4f570); */
-}
-
-.memorize-gradient {
-    background: radial-gradient(ellipse at bottom, #7ac4f570, #3498db70);
-}
-
-.memorize-slight-gradient {
-    background: radial-gradient(ellipse at bottom, rgba(122, 196, 245, 0.2), rgba(52, 152, 219, 0.2));
-}
-
-.bookie {
-    background: #F4E2DA;
-    /* background: linear-gradient(0.33turn, #F4922870, #FDB61070); */
-}
-
-.bookie-gradient {
-    background: radial-gradient(ellipse at bottom, #F4922870, #FDB61070);
-}
-
-.bookie-slight-gradient {
-    background: radial-gradient(ellipse at bottom, rgba(244, 146, 40, 0.2), rgba(253, 182, 16, 0.2));
 }
 
 #footer {
