@@ -737,7 +737,7 @@ body, html {
         height: auto;
         align-items: center;
         justify-items: center;
-        /* padding: 1em; */
+        padding: 2em;
         display: flex;
     }
     .portfolio-header {
