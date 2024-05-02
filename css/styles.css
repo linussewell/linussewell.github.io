@@ -758,7 +758,7 @@ body, html {
     }
     .right-container-image {
         grid-area: 1 / 1 / 3 / 2;
-        display: hidden;
+        position: relative;
     }
     .left-container {
         display: grid;
@@ -773,7 +773,7 @@ body, html {
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
-        display: hidden;
+        position: relative;
     }
 }
 
@@ -814,10 +814,11 @@ body, html {
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
         padding: 2em;
+        position: absolute;
     }
     .right-container-image {
         grid-area: 1 / 1 / 3 / 2;
-        display: hidden;
+        position: relative;
     }
     .left-container {
         display: grid;
@@ -829,9 +830,10 @@ body, html {
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
         padding: 2em;
+        position: absolute;
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
-        display: hidden;
+        position: relative;
     }
 }
