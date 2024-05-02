@@ -262,13 +262,13 @@ body, html {
 }
 
 .serif {
-    font-family: 'New York', -apple-system-ui-serif, ui-serif, 'Roboto Mono', serif;
+    font-family: 'Roboto Mono', serif;
 }
 .fun {
-    font-family: 'Nunito', 'Roboto Mono', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 .sfpro {
-    font-family: -apple-system, 'SF Pro', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #footer {
