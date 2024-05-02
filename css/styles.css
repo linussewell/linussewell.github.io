@@ -607,7 +607,7 @@ body, html {
     grid-area: 1 / 1 / 2 / 2;
     background: #B3C0A4;
     padding: 5em;
-    max-width: 50rem;
+    max-width: 100%;
 }
 
 .right-container-text h1 {
@@ -622,14 +622,13 @@ body, html {
     grid-area: 1 / 2 / 2 / 3;
     background: #B3C0A4;
     padding: 5em;
-    /* width: 100rem; */
-    max-width: 50rem;
+    max-width: 100%;
     place-items: center;
     vertical-align: middle;
 }
 
 .right-container-image img {
-    width: 50rem;
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -648,7 +647,7 @@ body, html {
     grid-area: 1 / 2 / 2 / 3;
     background: #efeae7;
     padding: 5em;
-    max-width: 50rem;
+    max-width: 100%;
 }
 
 .left-container-text h1 {
@@ -664,13 +663,13 @@ body, html {
     background: #efeae7;
     padding: 5em;
     width: auto;
-    max-width: 50rem;
+    max-width: 100%;
     place-items: center;
     vertical-align: middle;
 }
 
 .left-container-image img {
-    width: 50rem;
+    width: 100%;
     vertical-align: middle;
 }
 
@@ -757,11 +756,10 @@ body, html {
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
-        padding: 1em;
+        /* padding: 1em; */
     }
     .right-container-image {
         grid-area: 1 / 1 / 3 / 2;
-
     }
     .left-container {
         display: grid;
@@ -773,7 +771,7 @@ body, html {
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
-        padding: 1em;
+        /* padding: 1em; */
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
@@ -816,7 +814,7 @@ body, html {
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
-        padding: 1em;
+        /* padding: 1em; */
     }
     .right-container-image {
         grid-area: 1 / 1 / 3 / 2;
@@ -832,7 +830,7 @@ body, html {
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
-        padding: 1em;
+        /* padding: 1em; */
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
