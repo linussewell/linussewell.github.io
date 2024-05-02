@@ -600,7 +600,7 @@ body, html {
     align-items: auto;
     justify-items: auto;
     width: auto;
-    max-width: 100rem;
+    max-width: 100%;
 }
 
 .right-container-text {
@@ -641,7 +641,7 @@ body, html {
     grid-row-gap: 0px;
     align-items: auto;
     justify-items: auto;
-    max-width: 100rem;
+    max-width: 100%;
 }
 
 .left-container-text {
