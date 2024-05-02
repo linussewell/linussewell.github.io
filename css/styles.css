@@ -789,9 +789,13 @@ body, html {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
         padding: 1em;
+        align-items: center;
+        justify-items: center;
     }
     .right-container-image {
         grid-area: 1 / 1 / 3 / 2;
+        align-items: center;
+        justify-items: center;
 
     }
     .left-container {
@@ -805,9 +809,13 @@ body, html {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 14px;
         padding: 1em;
+        align-items: center;
+        justify-items: center;
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
+        align-items: center;
+        justify-items: center;
     }
 }
 
