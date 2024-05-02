@@ -754,6 +754,7 @@ body, html {
     }
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
+        position: absolute;
         padding: 2em;
     }
     .right-container-image {
@@ -770,6 +771,7 @@ body, html {
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
         padding: 2em;
+        position: absolute;
     }
     .left-container-image {
         grid-area: 1 / 1 / 3 / 2;
