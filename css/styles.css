@@ -755,7 +755,6 @@ body, html {
     }
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
-        font-size: 14px;
         padding: 2em;
     }
     .right-container-image {
@@ -771,7 +770,6 @@ body, html {
     }
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
-        font-size: 14px;
         padding: 2em;
     }
     .left-container-image {
@@ -815,7 +813,6 @@ body, html {
     }
     .right-container-text {
         grid-area: 1 / 1 / 2 / 2;
-        font-size: 14px;
         padding: 2em;
     }
     .right-container-image {
@@ -831,7 +828,6 @@ body, html {
     }
     .left-container-text {
         grid-area: 1 / 1 / 2 / 2;
-        font-size: 14px;
         padding: 2em;
     }
     .left-container-image {
