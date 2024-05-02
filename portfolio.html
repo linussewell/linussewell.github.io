@@ -35,45 +35,47 @@
     </header>
 
     <!-- MAIN CONTENT START -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<div class="portfolio-header">
+  <h1 class="serif">Portfolio</h1>
+    <div class="portfolio-paragraph">
+      <p class="serif">From fully fledged applications to projects I worked on when I was 14, this is a collection of all of my work, findable both online and in the iOS App Store.</p>
+    </div>
+</div>
+    
 
-    <h2 style="text-align: center;">linussewell.com/portfolio</h2>
-    <p style="text-align: center;">This page is temporarily down for maintenance.</p>
+    <div class="right-container">
+      <div class="right-container-image"><img src="img/swift.jpg" /> </div>
+      <div class="right-container-text">
+        <h3>Swift Student Challenge</h3>
+        <p>For 2024, I wanted to get my Swift & SwiftUI up to the next level. And so, I came up with Arithmetic, an app that gamifies learning and makes maths more exciting for young people and children. This app included daily challanges, various difficulties, and had accessibility features from iOS VoiceOver baked in, preventing visually imparied children from being left behind.</p>
+      </div>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="left-container">
+      <div class="left-container-image"><img src="img/twist.jpeg" /> </div>
+      <div class="left-container-text">
+        <h3>Twist Flooring Limited</h3>
+        <p>I was tasked with creating a whole new website for Twist FLooring, a small business in the south of England. Their old site was lagging behind, made from a template and lacking updates. I pushed their new site forward, into the current decade with an all-new modern makeover.</p>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="right-container-image"><img src="img/cooper.jpeg" /> </div>
+      <div class="right-container-text">
+        <h3>Cooper Accountancy Bath</h3>
+        <p>Cooper Accountancy Bath was my first real project. Made for a new small business based in Bath, United Kingdom - I used what I knew to pack in information in a minimalistic and refreshing manner in a way with encompassed the style of their logo and professional nature of the brand</p>
+      </div>
+    </div>
+
+    <div class="left-container">
+      <div class="left-container-image"><img src="img/coffeetitle.png" /> </div>
+      <div class="left-container-text">
+        <h3>Coffee+</h3>
+        <p>A Minecraft mod that adds coffee to Minecraft, the right way. Origninally made using MCreator when I was 14, it hasn't seen much love in recent years. At some point soon, I plan to remake the entire mod based on Fabric rather than the previous modding platform Forge.</p>
+      </div>
+    </div>
+
+
 
     <!-- FOOTER START  -->
 
@@ -81,13 +83,22 @@
         <h1>Linus Sewell</h1>
 
         <ul class="socials">
-            <li aria-label="github"><a href="https://github.com/linussewell"><i class="fa-brands fa-github"></i></a></li>
-            <li aria-label="linkedin"><a href="https://www.linkedin.com/in/linussewell"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li aria-label="instagram"><a href="https://instagram.com/linussewell"><i class="fa-brands fa-instagram"></i></a></li>
-            <li aria-label="mail"><a href="mailto:hello@linussewell.com"><i class="fa-regular fa-envelope"></i></a></li>
-        </ul>
+          <li aria-label="github"><a href="https://github.com/linussewell"><i class="fa-brands fa-github"></i></a></li>
+          <li aria-label="linkedin"><a href="https://www.linkedin.com/in/linussewell"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li aria-label="instagram"><a href="https://instagram.com/linussewell"><i class="fa-brands fa-instagram"></i></a></li>
+          <div class="tooltip">
+              <li aria-label="mail"><a onclick="copyMail()"><i class="fa-regular fa-envelope"></i></a><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></li>
+          </div>
+      </ul>
 
-        <p>&copy; Linus Sewell 2024</p>
+      <p>&copy; Linus Sewell 2024</p>
+
+      <script>
+          function copyMail() {
+              navigator.clipboard.writeText("hello@linussewell.com")
+              document.getElementById('myTooltip').innerHTML="Copied!"
+          }
+      </script>
     </footer>
 </body>
 </html>

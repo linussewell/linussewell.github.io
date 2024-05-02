@@ -58,10 +58,19 @@
             <li aria-label="github"><a href="https://github.com/linussewell"><i class="fa-brands fa-github"></i></a></li>
             <li aria-label="linkedin"><a href="https://www.linkedin.com/in/linussewell"><i class="fa-brands fa-linkedin"></i></a></li>
             <li aria-label="instagram"><a href="https://instagram.com/linussewell"><i class="fa-brands fa-instagram"></i></a></li>
-            <li aria-label="mail"><a href="mailto:hello@linussewell.com"><i class="fa-regular fa-envelope"></i></a></li>
+            <div class="tooltip">
+                <li aria-label="mail"><a onclick="copyMail()"><i class="fa-regular fa-envelope"></i></a><span class="tooltiptext" id="myTooltip">Copy to clipboard</span></li>
+            </div>
         </ul>
 
         <p>&copy; Linus Sewell 2024</p>
+
+        <script>
+            function copyMail() {
+                navigator.clipboard.writeText("hello@linussewell.com")
+                document.getElementById('myTooltip').innerHTML="Copied!"
+            }
+        </script>
     </footer>
 </body>
 </html>

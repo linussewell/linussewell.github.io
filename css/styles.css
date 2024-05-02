@@ -554,6 +554,173 @@ body, html {
     text-decoration: none;
 }
 
+.portfolio-1 {
+    text-align: center;
+}
+
+.portfolio-2 {
+    text-align: center;
+}
+
+.portfolio-3 {
+    text-align: center;
+}
+
+.portfolio-4 {
+    text-align: center;
+}
+
+.portfolio-header {
+    text-align: center;
+    padding: 5em;
+}
+
+.portfolio-paragraph {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.custom-image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 75%; /*Adjust this value according to your image aspect ratio */
+  }
+
+  .slider-before,
+  .slider-after {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-after {
+    overflow: hidden;
+  }
+
+  .slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    cursor: ew-resize;
+  }
+
+.slider-handle::before,
+.slider-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  cursor: ew-resize;
+  transition: all 0.2s ease-out; /* Add transition property */
+}
+
+.slider-handle::before {
+  left: -24px;
+  border-right: 16px solid #fff;
+}
+
+.slider-handle::after {
+  right: -24px;
+  border-left: 16px solid #fff;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: auto;
+    justify-items: auto;
+    max-width: 100rem;
+}
+
+.right-container-text {
+    grid-area: 1 / 1 / 2 / 2;
+    background: #B3C0A4;
+    padding: 5em;
+    max-width: 50rem;
+}
+
+.right-container-image {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #B3C0A4;
+    padding: 5em;
+    width: auto;
+    max-width: 100rem;
+}
+
+.right-container-image img {
+    width: 50rem;
+}
+
+.left-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: auto;
+    justify-items: auto;
+    max-width: 100rem;
+}
+
+.left-container-text {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #efeae7;
+    padding: 5em;
+    max-width: 50rem;
+}
+
+.left-container-image {
+    grid-area: 1 / 1 / 2 / 2;
+    background: #efeae7;
+    padding: 5em;
+    width: auto;
+    max-width: 50rem;
+}
+
+.left-container-image img {
+    width: 50rem;
+}
+
 @media (max-width: 700px) {
     .mobile-hidden {
         display: none;
@@ -643,4 +810,35 @@ body, html {
         justify-items: center;
         background-size: contain;
     }  
+    .right-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .right-container-text {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 14px;
+        padding: 1em;
+    }
+    .right-container-image {
+        grid-area: 1 / 1 / 3 / 2;
+        
+    }
+    .left-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .left-container-text {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 14px;
+        padding: 1em;
+    }
+    .left-container-image {
+        grid-area: 1 / 1 / 3 / 2;
+    }
 }
