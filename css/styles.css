@@ -624,10 +624,13 @@ body, html {
     padding: 5em;
     /* width: 100rem; */
     max-width: 50rem;
+    place-items: center;
+    vertical-align: middle;
 }
 
 .right-container-image img {
     width: 50rem;
+    vertical-align: middle;
 }
 
 .left-container {
@@ -662,10 +665,13 @@ body, html {
     padding: 5em;
     width: auto;
     max-width: 50rem;
+    place-items: center;
+    vertical-align: middle;
 }
 
 .left-container-image img {
     width: 50rem;
+    vertical-align: middle;
 }
 
 @media (max-width: 700px) {
