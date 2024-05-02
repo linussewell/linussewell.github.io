@@ -694,7 +694,6 @@ body, html {
         grid-area: 1 / 1 / 3 / 2;
         margin-left: auto; 
         margin-right: auto;
-        padding: auto;
         text-align: left;
         width: auto;
         max-width: fit-content;
@@ -737,7 +736,7 @@ body, html {
         height: auto;
         align-items: center;
         justify-items: center;
-        padding: 2em;
+        padding: 1em;
         display: flex;
     }
     .portfolio-header {
@@ -785,6 +784,7 @@ body, html {
     .grid_container .content_1 {
         max-width: 480px;
         max-height: min-content;
+        padding: 2em;
     }
     .grid_container .content_2 {
         max-width: 480px;
