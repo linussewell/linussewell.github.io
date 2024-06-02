@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <meta property="og:title" content="About | Linus Sewell" />
     <meta property="og:description" content="Find out more about who I am and what I do." />
     <meta property="og:image" content="img/profile.jpg" />
@@ -33,6 +34,23 @@
             </ul>
         </div>
     </header>
+
+    <!-- LOADER START -->
+
+    <div class="loader-wrapper">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+        </div>
+    </div>
+  
+    <script>
+        $(window).on("load",function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
     <!-- FOOTER START  -->
 
