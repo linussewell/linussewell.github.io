@@ -568,14 +568,14 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     }
 }
    
-@media (max-width: 700px) {
+/* Removes excess social options on mobile */
+@media (max-width: 640px) {
     .mobile-hidden {
         display: none;
     }
 }
 
-/* mobile heder shortener */
-
+/* Initials replace full name on mobile */
 a.mobile {display: none }
 @media (max-width: 640px) {
     a.mobile {display: block }
