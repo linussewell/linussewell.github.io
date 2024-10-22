@@ -582,8 +582,8 @@ a.mobile {display: none }
     a.desktop {display: none}
 }
 
-
-@media (max-width: 1135px) {
+/* max-width: 1135px */
+@media (max-width: 640px) {
     .grid_container {
         display: block;
     
