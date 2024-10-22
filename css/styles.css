@@ -582,8 +582,8 @@ a.mobile {display: none }
     a.desktop {display: none}
 }
 
-/* max-width: 1135px */
-@media (max-width: 640px) {
+/* Change index.html layout on smaller displays */
+@media (max-width: 1135px) {
     .grid_container {
         display: block;
     
