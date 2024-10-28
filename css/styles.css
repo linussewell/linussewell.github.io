@@ -294,8 +294,8 @@ body, html {
     padding: 5em;
     text-align: left;
     width: auto;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
 }
 
 .grid_container .content_1 h1 {
